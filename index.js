@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'assignment.html'));
 });
 
-app.post('/', async (req, res) => {
-    console.log('POST request received');
+app.post('/api/form-submit', async (req, res) => {
+    console.log('FORM submission received');
     const formData = req.body;
 
     try {
