@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 [build]
   publish = "public"
   functions = "functions"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/assignment.html"
   status = 200
+=======
+
+
