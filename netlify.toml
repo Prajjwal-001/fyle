@@ -7,9 +7,14 @@
   to = "/assignment.html"
   status = 200
 
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
 [functions]
   [functions."form-submit"]
     name = "form-submit"
     path = "/api/form-submit"
     runtime = "nodejs14.x"
-    handler = "index.formSubmit"
+    handler = "index.handler"
