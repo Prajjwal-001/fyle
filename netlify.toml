@@ -12,4 +12,4 @@
     name = "form-submit"
     path = "/api/form-submit"
     runtime = "nodejs14.x"
-    handler = "indexing.formSubmit"
+    handler = "index.formSubmit"
