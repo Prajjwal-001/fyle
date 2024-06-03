@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 [build]
   publish = "public"
   functions = "functions"
@@ -7,6 +7,3 @@
   from = "/*"
   to = "/assignment.html"
   status = 200
-=======
-
-
