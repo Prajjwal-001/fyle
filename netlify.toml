@@ -17,4 +17,4 @@
     name = "form-submit"
     path = "/api/form-submit"
     runtime = "nodejs14.x"
-    handler = "index.handler"
+    handler = "index.formSubmit"
