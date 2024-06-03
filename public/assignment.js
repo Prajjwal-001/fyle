@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formData.forEach((value, key) => jsonData[key] = value);
 
         try {
-            let response = await fetch('/', {
+            let response = await fetch('/api/form-submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
