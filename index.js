@@ -3,18 +3,16 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const path = require('path');
 const cors = require('cors');
+
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors({
-    origin: '*',
-    methods: ['POST'],
-    headers: ['Content-Type']
-}));
+app.use(cors());
+
 app.get('/api/form-submit', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'assignment.html'));
 });
