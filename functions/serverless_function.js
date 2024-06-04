@@ -1,4 +1,3 @@
-// serverless-function.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const serverless = require('serverless-http');
@@ -14,7 +13,6 @@ router.post('/api/form-submit', async (req, res) => {
     const formData = req.body;
 
     try {
-        // Process the form data
         res.status(200).send('Form submitted successfully');
     } catch (error) {
         console.error('Error processing form submission:', error);
